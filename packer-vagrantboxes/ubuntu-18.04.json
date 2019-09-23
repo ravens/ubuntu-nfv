@@ -16,7 +16,8 @@
         "sudo apt-get -y update",
         "sudo apt-get -yq install software-properties-common",
         "sudo apt-add-repository --yes --update ppa:ansible/ansible",
-        "sudo apt-get -qy install ansible git"
+        "sudo apt-get -qy install ansible git",
+        "sudo apt-get -qy install network-manager"
       ]
     }
   ],
