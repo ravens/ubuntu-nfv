@@ -1,0 +1,14 @@
+---
+- hosts: all 
+  become: true
+  tasks:
+  - name: Rename interface
+    copy:
+      dest: "/etc/netplan/01-netcfg.yaml"
+      content: |
+        network:
+          version: 2
+          renderer: networkd
+          ethernets:
+            ens5:
+              dhcp4: yes
